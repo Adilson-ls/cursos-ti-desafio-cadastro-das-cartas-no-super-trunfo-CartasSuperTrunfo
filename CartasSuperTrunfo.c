@@ -43,7 +43,7 @@ int main() {
                                                 // e armazena em 'codigo1'. É importante que o usuário
                                                 // não digite mais que 3 caracteres além do terminador nulo.
     printf("Nome da Cidade: ");                 // Pede o nome da cidade
-    scanf(" %s[^\n]", nome_cidade1);            // Lê uma linha inteira de texto (incluindo espaços) até encontrar
+    scanf("%s[^\n]", nome_cidade1);            // Lê uma linha inteira de texto (incluindo espaços) até encontrar
                                                 // uma quebra de linha ('\n') e armazena em 'nome_cidade1'.
                                                 // O " %[^\n]" é usado para ler strings com espaços.
     printf("População: ");                      // Pede a população
@@ -61,7 +61,7 @@ int main() {
     printf("Cadastro da Carta 2:\n");
     printf("Estado (A-H): ");
     scanf(" %c", &estado2);
-    printf("Código da Carta (ex: B03): ");
+    printf("Código da Carta (ex:  B03): ");
     scanf("%s", codigo2);
     printf("Nome da Cidade: ");
     scanf(" %s[^\n]", nome_cidade2);
@@ -102,6 +102,6 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
     printf("\n");
-    
+
     return 0;
 }
